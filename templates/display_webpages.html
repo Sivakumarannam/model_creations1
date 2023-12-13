@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Display_Webpages</h1>
+        <table border="3px">
+            <tr>
+                <th>PK</th>
+                <th>Topic_name</th>
+                <th>Name</th>
+                <th>URL</th>
+                <th>EMAIL</th>
+            </tr>
+            {% for wo in webpages %}
+            <tr>
+                <td align="center">{{wo.pk}}</td>
+                <td align="center">{{wo.topic_name}}</td>
+                <td align="center">{{wo.name}}</td>
+                <td align="center">{{wo.url}}</td>
+                <td align="center">{{wo.email}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <a href="{% url 'display_access_records' %}">AccessRecords</a>
+    </center>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Display Players</h1>
+        <table border="3px">
+            <tr>
+                <th>PK</th>
+                <th>Author</th>
+                <th>Player</th>
+            </tr>
+            {% for po in players %}
+            <tr>
+                <td>{{po.pk}}</td>
+                <td>{{po.author}}</td>
+                <td>{{po.player}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <a href="{% url 'display_topics' %}">Topics</a>
+    </center>
+</body>
+</html>
