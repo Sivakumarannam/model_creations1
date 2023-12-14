@@ -24,4 +24,8 @@ urlpatterns = [
     path('display_webpages/',display_webpages,name='display_webpages'),
     path('display_access_records/',display_access_records,name='display_access_records'),
     path('display_players/',display_players,name='display_players'),
+    path('insert_topics/',insert_topics,name='insert_topics'),
+    path('insert_webpage/',insert_webpage,name='insert_webpage'),
+    path('insert_access_records/',insert_access_records,name='insert_access_records'),
+    path('insert_players/',insert_players,name='insert_players'),
 ]
