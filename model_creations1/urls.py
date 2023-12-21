@@ -28,4 +28,6 @@ urlpatterns = [
     path('insert_webpage/',insert_webpage,name='insert_webpage'),
     path('insert_access_records/',insert_access_records,name='insert_access_records'),
     path('insert_players/',insert_players,name='insert_players'),
+    path('update_webpage/',update_webpage,name='update_webpage'),
+    path('update_access_records/',update_access_records,name='update_access_records'),
 ]
